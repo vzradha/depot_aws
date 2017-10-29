@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Exec js gem
 gem 'execjs', '~> 1.3.0'
 
-gem 'therubyracer'. '~>0.9.9'
+gem 'therubyracer'. '~> 0.9.9'
 
 #Add Bootstrap
 gem 'bootstrap-sass', '3.2.0.0'
