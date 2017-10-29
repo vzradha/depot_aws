@@ -87,6 +87,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    libv8 (3.16.14.15)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -132,6 +133,7 @@ GEM
     rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
+    ref (2.0.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     sass (3.4.21)
@@ -164,6 +166,9 @@ GEM
       rest-client (>= 1.4.0, < 1.7.0)
       sequel (~> 3.20.0)
       sinatra (~> 1.0.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
@@ -188,6 +193,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
+  execjs
   figaro
   jbuilder (~> 2.0)
   jquery-rails
@@ -199,5 +205,6 @@ DEPENDENCIES
   spring
   sqlite3
   taps
+  therubyracer
   turbolinks
   web-console (~> 2.0)
