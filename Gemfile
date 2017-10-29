@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
+gem 'sqlite3'
 # Use postgresql
 #gem 'pg'
 # Use SCSS for stylesheets
@@ -36,11 +36,19 @@ gem 'bootstrap-sass', '3.2.0.0'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'figaro'
+gem 'puma'
 
-group :production do
-	gem 'pg'
-end
+gem 'capistrano'
+gem 'capistrano3-puma'
+gem 'capistrano-rails', require: false
+gem 'capistrano-bundler', require: false
+gem 'capistrano-rvm'
+
+gem 'pg'
+#group :production do
+#	gem 'pg'
+#end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
